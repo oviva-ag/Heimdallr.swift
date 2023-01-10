@@ -15,9 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "Heimdallr",
-            sources: [
-                "Heimdallr"
-            ],
+            path: "./Heimdallr",
+            exclude: ["Supporting Files/Heimdallr.h", "Supporting Files/Info.plist"],
             linkerSettings: [
                 .linkedFramework("Foundation")
             ]),
