@@ -15,8 +15,11 @@ let package = Package(
     targets: [
         .target(
             name: "Heimdallr",
+            sources: [
+                "Heimdallr"
+            ],
             linkerSettings: [
-                .linkedFramework("UIKit")
+                .linkedFramework("Foundation")
             ]),
     ]
 )
